@@ -2,12 +2,14 @@
 
 **Problem/Purpose**
 
-Customers are upset when they purchase bad products due to fake reviews on Amazon, and may potentially stop using the site due to lost trust.  Having a system that is able to detect fake reviews can help delete them and allow members continue to shop at the site with confidence.
+Customers are upset when they purchase bad products due to fake reviews on Amazon, and may potentially stop using the site due to lost trust.  Amazon currently has extensive system to pin point fake reviews and prevent them from being posted on the product's page.  However, the system is not able to point out the reviews that are left by purchasers who receive incentives (Amazon gift card, seller returns a percentage of paid money back to the member, etc) from the sellers, and these reviews can be biased and potentially mislead other people to buy a product that is not as great as they think.   
+
+This project is trying to asnwer how can these incentivized reviews be distinguished from the fake and genuine ones, and a proposed solution is having a system that is able to flag these reviews as incentivized ones.  The impact hypothesis is by clearly flagging the reviews, these reviews can provide more accurate information on products, and members can feel more confident making their purchases. One potential risk of this project is flagging genuine reviews as incentivized, and the project is based on the assumption that it is possible to distinguish the difference among the three types of reviews.  A measure of success would be the number of members stays the same or increased after the system is rolled out. 
 
 **Data Description**
 
 * I plan to use the Amazon review data from this website, https://nijianmo.github.io/amazon/index.html#subsets, and columns are overall rating, verified (emailed the author to clarify if this means the reviewer made a verifed purchase if the value is True), review time, reviewer ID, Amazon standard identification number (specific number for each product), style, reviewer name, review text, summary, vote (helpful votes of the reivew).
-* A sample analysis in this project is positive/native review ratio per reviewer with 4-5 overall rating as positive reviews and 1-3 as negative reviews.  This is used to see if a reviewer is posting way more positive reivews than negative reviews, and may potentially be posting fake reviews.
+* A sample analysis is to see whether there is a significant amount of positive reviews for a product comparing to other products. This may signal that some of the reviews are from members who received incentives from the sellers.
 
 **Tools**
 
@@ -16,9 +18,7 @@ Customers are upset when they purchase bad products due to fake reviews on Amazo
 
 **MVP Goal**
 
-A minimum viable product could be a bar graph showing the number of reviews done by certain users which help us to visualize if certain users write an excessive amount of reviews that could potentially be fake reviews. 
-
-
+A minimum viable product could have some findings and corresponding visualizations from the exploratory data analysis.
 
 
 
