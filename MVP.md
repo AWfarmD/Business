@@ -15,3 +15,6 @@ This project is trying to answer how can incentivized reviews be distingueshed f
 **Visual**
 
 The visuals below present a product started to rapidly receive 5 star reviews once there was a 1 star review been left at the product page.  There were eight 5 star reviews from the same reviewer on August 8, 2018, and twenty 5 star reviews from the same reviewer on August 18, 2018.
+
+![Review pattern](https://github.com/AWfarmD/Business/blob/main/Figures/Abnormal%20Patern%202%20-%201.png?raw=true)
+![Review Pattern2](https://github.com/AWfarmD/Business/blob/main/Figures/Abnormal%20Patern%202%20-%202.png?raw=true)
